@@ -4,8 +4,10 @@ go 1.14
 
 require (
 	github.com/evanj/concurrentlimit v0.0.0-20200304153759-a4273e189b6c
-	github.com/golang/protobuf v1.3.4
-	golang.org/x/net v0.0.0-20200301022130-244492dfa37a // indirect
-	google.golang.org/genproto v0.0.0-20190819201941-24fa4b261c55
-	google.golang.org/grpc v1.27.1
+	github.com/golang/protobuf v1.3.5
+	golang.org/x/net v0.0.0-20200320220750-118fecf932d8 // indirect
+	golang.org/x/sys v0.0.0-20200321134203-328b4cd54aae // indirect
+	golang.org/x/text v0.3.2 // indirect
+	google.golang.org/genproto v0.0.0-20200319113533-08878b785e9c
+	google.golang.org/grpc v1.28.0
 )
