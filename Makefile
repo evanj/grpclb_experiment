@@ -3,7 +3,7 @@ BUILD_DIR:=build
 PROTOC:=$(BUILD_DIR)/bin/protoc
 PROTOC_GEN_GO:=$(BUILD_DIR)/protoc-gen-go
 
-serviceconfig/service_config.pb.go: serviceconfig/service_config.proto $(PROTOC) $(PROTOC_GEN_GO)
+grpc_service_config/service_config.pb.go: grpc_service_config/service_config.proto $(PROTOC) $(PROTOC_GEN_GO)
 	$(PROTOC) --plugin=$(PROTOC_GEN_GO) --go_out=plugins=grpc,paths=source_relative:. $<
 
 # download protoc to a temporary tools directory
